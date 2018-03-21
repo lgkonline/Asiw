@@ -1,0 +1,7 @@
+#translation-table {
+    .tbody {
+        .row:nth-child(odd) {
+            background-color: $gray-lightest;
+        }        
+    }
+}

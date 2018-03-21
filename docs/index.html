@@ -7,25 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Asiw by LGK</title>
 
+    <link rel="icon" type="image/png" href="https://lib.lgkonline.com/favicon.png?v=new">
+    <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="https://lib.lgkonline.com/pill-menu/style.min.css">
 
     <style type="text/css">
+        :root {
+            --primary: #8EA6D0;
+            --darker-primary: #6a8ac1;
+
+            --secondary: #d6aaa9;
+            --darker-secondary: #c68886;
+        }
+
         html,
         body {
             height: 100%;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            color: #555;
+            font-family: "HK Grotesk", sans-serif;
+            color: orange;
+            background-color: white;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-size: 1rem;
         }
 
-        h2 {
-            font-weight: 300;
+        a {
+            color: var(--primary);
+            transition: color .2s;
+        }
+
+        a:hover {
+            color: var(--darker-primary);
+        }
+
+        a:visited {
+            color: var(--secondary);
+        }
+
+        a:visited:hover {
+            color: var(--darker-secondary);
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 2.1rem;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--primary);
+            color: white !important;
+            padding: .8rem 2rem;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            transition: background-color .2s;
+            font-size: 1.5rem;
+        }
+
+        .btn:hover {
+            background-color: var(--darker-primary);
+        }
+
+        .btn:active {
+            background-color: var(--darker-secondary);
+        }
+
+        .screenshot {
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .3);
+            max-width: calc(100vw - 4rem);
+            border-top: 1px solid rgba(255, 165, 0, .2);
         }
     </style>
 </head>
@@ -39,10 +103,28 @@
     </div>
     <div class="lgk-pill-wrapper"></div>
 
-    <main>
-        <img src="images/Logo.svg" alt="Asiw by LGK" style="width:250px">
-        <h2>Site is coming soon...</h2>
-    </main>
+    <header style="margin:10vh 0">
+        <img class="d-block mx-auto" src="images/Logo.svg" alt="Asiw by LGK" style="width:250px">
+        <h1>Lightweight PHP CMS with MVC</h1>
+    </header>
+
+    <div style="margin-bottom:10vh">
+        <a href="https://github.com/lgkonline/Asiw/releases" class="btn">
+            Download
+        </a>
+        <br/>
+        <a href="https://github.com/lgkonline/Asiw">Asiw on GitHub</a>
+    </div>
+
+    <img class="screenshot d-block mx-auto" src="images/screenshot.png" alt="Asiw screenshot of the backend">
+
+    <div class="text-center" style="color:#222;margin:4rem 0">
+        The font HK Grotesk by Hanken Design Co is
+        <a href="https://www.fontsquirrel.com/license/hk-grotesk">SIL licensed</a>.
+        <br/> The code is
+        <a href="https://github.com/lgkonline/Asiw/blob/master/LICENSE">MIT licensed</a>.
+        <br> &copy; 2018 Lars / LGK
+    </div>
 
     <script src="https://lib.lgkonline.com/pill-menu/script.min.js"></script>
 </body>

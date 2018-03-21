@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "animate";
+
+*:focus {
+    outline: none !important;
+}
+
+body {
+    cursor: default;
+}
+
+.tpl-area,
+.tpl-area * {
+    display: none !important;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.handled-alert {
+    position: fixed;
+    z-index: 3;
+    width: 600px;
+    top: 1em;
+    left: 50%;
+    margin-left: -300px;
+}
+
+@import "sign-area";
+@import "backend";

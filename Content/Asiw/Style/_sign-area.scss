@@ -1,0 +1,16 @@
+.area {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+#sign-area {
+    padding: 2em 0;
+    background-color: $gray-lightest;
+
+    .container {
+        max-width: 50em;
+        @include make-container();
+    }
+}
